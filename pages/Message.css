@@ -1,0 +1,80 @@
+.message-panel {
+  width: 350px;
+  height: 600px;
+  background: white;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.message-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Search */
+.search-box {
+  padding: 8px 12px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 13px;
+}
+
+.search-box:focus {
+  border: 1px solid #0a66c2;
+}
+
+/* Conversations */
+.conversation-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.conversation-item:hover {
+  background: #f3f2ef;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #0a66c2;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-info h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.chat-info p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.time {
+  margin-left: auto;
+  font-size: 11px;
+  color: gray;
+}

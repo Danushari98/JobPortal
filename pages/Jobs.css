@@ -1,0 +1,89 @@
+/* ===== MAIN CONTAINER ===== */
+.jobs-container {
+  display: flex;
+  background: #f3f4f6;
+  min-height: 90vh;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+/* ===== LEFT SIDE JOB LIST ===== */
+.jobs-list {
+  width: 35%;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 85vh;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== RIGHT SIDE JOB DETAILS ===== */
+.job-details {
+  width: 65%;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== JOB DETAILS CONTENT ===== */
+.job-details h2 {
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.company {
+  color: #6b7280;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ===== APPLY BUTTON ===== */
+.apply-btn {
+  background: #0a66c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #004182;
+}
+
+/* ===== SECTIONS ===== */
+.job-details h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #111827;
+}
+
+.job-details ul {
+  padding-left: 20px;
+}
+
+.job-details li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+/* ===== NO JOB MESSAGE ===== */
+.jobs-list h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #dc2626;
+}

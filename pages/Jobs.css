@@ -1,31 +1,24 @@
-/* ===== MAIN CONTAINER ===== */
 .jobs-container {
   display: flex;
-  background: #f3f4f6;
-  min-height: 90vh;
-  padding: 20px 40px;
-  gap: 20px;
+  height: 100vh;          /* Full screen height */
+  overflow: hidden;       /* Page scroll stop */
 }
 
-/* ===== LEFT SIDE JOB LIST ===== */
+/* LEFT SIDE */
 .jobs-list {
   width: 35%;
-  background: white;
-  border-radius: 10px;
+  border-right: 1px solid #ddd;
   padding: 15px;
-  overflow-y: auto;
-  max-height: 85vh;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;       /* Only this scroll */
 }
 
-/* ===== RIGHT SIDE JOB DETAILS ===== */
+/* RIGHT SIDE */
 .job-details {
   width: 65%;
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  overflow-y: auto;       /* Only this scroll */
 }
+
 
 /* ===== JOB DETAILS CONTENT ===== */
 .job-details h2 {

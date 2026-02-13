@@ -1,20 +1,30 @@
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home-container">
+
       {/* HERO SECTION */}
       <section className="hero">
         <h1>Welcome to JobPortal</h1>
         <p>
-          JobPortal is a modern job search platform built using React.  
+          JobPortal is a modern job search platform built using React.
           It helps job seekers discover opportunities and apply for roles
           that match their skills, experience, and career goals.
         </p>
-        <button className="hero-btn">Explore Jobs</button>
+
+        <button
+          className="hero-btn"
+          onClick={() => navigate("/jobs")}
+        >
+          Explore Jobs
+        </button>
       </section>
 
-      {/* ABOUT SECTION */}
+      {/* WHY JOBPORTAL */}
       <section className="section">
         <h2>Why JobPortal?</h2>
         <p>
@@ -24,7 +34,7 @@ function Home() {
         </p>
       </section>
 
-      {/* FEATURES */}
+      {/* KEY FEATURES */}
       <section className="section features">
         <h2>Key Features</h2>
         <ul>
@@ -45,11 +55,9 @@ function Home() {
           through the admin dashboard.
         </p>
       </section>
+ 
+      
 
-      {/* FOOTER SECTION */}
-      <section className="footer">
-        <p>© 2026 JobPortal • Built with React</p>
-      </section>
     </div>
   );
 }
